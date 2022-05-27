@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatRoom</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+ 
+   <h1 class="title">iChat</h1>
+  <div class="main">
+      <div class="name">
+          <span><i class="far fa-user"></i></span>
+          <input type="text" id="name-input" class="name-input" value="anonymous" maxlength="20"/>
+      </div>
+<ul class="message-container" id="message-container">
+  <!--  <li class="message-left">
+        <p class="message">
+            lorem iopsum
+            <span>bluebird . 26 july 10:40</span>
+        </p>
+    </li>
+    <li class="message-right">
+        <p class="message">
+            lorem iopsum
+            <span>bluebird . 26 july 10:40</span>
+        </p>
+    </li>
+    <li class="message-feedback">
+        <p class="feedback" id="feedback">
+            killer is typing a message
+        </p>
+    </li>-->
+</ul>
+
+<form action="" class="message-form" id="message-form">
+ <input type="text" name="message" id="message-input" class="message-input" autocomplete="false">
+<div class="v-divider"></div>
+<button type="submit" class="send-button">send <span><i class="fas fa-paper-plane"></i></span></button>
+</form>
+
+
+  </div>
+  <h3 class="clients-total" id="clients-total">Total clients : 2</h3>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+</body>
+</html>
